@@ -29,31 +29,31 @@ public class juego extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
+        a2 = new javax.swing.JButton();
+        a3 = new javax.swing.JButton();
+        a1 = new javax.swing.JButton();
+        a4 = new javax.swing.JButton();
+        a5 = new javax.swing.JButton();
+        b1 = new javax.swing.JButton();
+        c1 = new javax.swing.JButton();
+        d1 = new javax.swing.JButton();
+        e1 = new javax.swing.JButton();
+        b2 = new javax.swing.JButton();
+        b3 = new javax.swing.JButton();
+        b4 = new javax.swing.JButton();
+        b5 = new javax.swing.JButton();
+        c2 = new javax.swing.JButton();
+        c3 = new javax.swing.JButton();
+        c4 = new javax.swing.JButton();
+        c5 = new javax.swing.JButton();
+        d2 = new javax.swing.JButton();
+        e2 = new javax.swing.JButton();
+        d3 = new javax.swing.JButton();
+        d4 = new javax.swing.JButton();
+        d5 = new javax.swing.JButton();
+        e3 = new javax.swing.JButton();
+        e4 = new javax.swing.JButton();
+        e5 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -71,187 +71,186 @@ public class juego extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jButton26 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        a2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                a2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, 80, 60));
+        jPanel3.add(a2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, 80, 60));
 
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        a3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                a3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 80, 60));
+        jPanel3.add(a3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 80, 60));
 
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        a1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                a1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, 80, 60));
+        jPanel3.add(a1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, 80, 60));
 
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        a4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                a4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, 80, 60));
+        jPanel3.add(a4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, 80, 60));
 
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        a5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                a5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 380, 80, 60));
+        jPanel3.add(a5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 380, 80, 60));
 
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                b1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 80, 60));
+        jPanel3.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 80, 60));
 
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                c1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 80, 60));
+        jPanel3.add(c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 80, 60));
 
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        d1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                d1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 560, 80, 60));
+        jPanel3.add(d1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 560, 80, 60));
 
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        e1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                e1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 620, 80, 60));
+        jPanel3.add(e1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 620, 80, 60));
 
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                b2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 80, 60));
+        jPanel3.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 80, 60));
 
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        b3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                b3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 440, 80, 60));
+        jPanel3.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 440, 80, 60));
 
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                b4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 440, 80, 60));
+        jPanel3.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 440, 80, 60));
 
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        b5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                b5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 440, 80, 60));
+        jPanel3.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 440, 80, 60));
 
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                c2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 80, 60));
+        jPanel3.add(c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 80, 60));
 
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                c3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 80, 60));
+        jPanel3.add(c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 80, 60));
 
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                c4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 500, 80, 60));
+        jPanel3.add(c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 500, 80, 60));
 
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                c5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, 80, 60));
+        jPanel3.add(c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, 80, 60));
 
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        d2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                d2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 560, 80, 60));
+        jPanel3.add(d2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 560, 80, 60));
 
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        e2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                e2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 620, 80, 60));
+        jPanel3.add(e2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 620, 80, 60));
 
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        d3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                d3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 80, 60));
+        jPanel3.add(d3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 80, 60));
 
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        d4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                d4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 560, 80, 60));
+        jPanel3.add(d4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 560, 80, 60));
 
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        d5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                d5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 560, 80, 60));
+        jPanel3.add(d5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 560, 80, 60));
 
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        e3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                e3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 80, 60));
+        jPanel3.add(e3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 80, 60));
 
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        e4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                e4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 620, 80, 60));
+        jPanel3.add(e4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 620, 80, 60));
 
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        e5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                e5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 620, 80, 60));
+        jPanel3.add(e5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 620, 80, 60));
 
         jLabel12.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -309,7 +308,7 @@ public class juego extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/TITULO.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Puntaje"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resumen"));
         jPanel2.setFont(new java.awt.Font("Trebuchet MS", 3, 48)); // NOI18N
 
         jLabel4.setText("Barcos destruidos:");
@@ -348,15 +347,6 @@ public class juego extends javax.swing.JFrame {
         jLabel17.setText("Barco hundido o Tiro fallado");
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 710, -1, -1));
 
-        jButton26.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
-        jButton26.setText("Terminar juego");
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 710, -1, -1));
-
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ship-World-of-Warships-video-games-vehicle-artwork-iceberg-575205-wallhere.com.jpg"))); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 840));
 
@@ -374,109 +364,105 @@ public class juego extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_a2ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_a3ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_a1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_a4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void a5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_a5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_b1ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_c1ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void d1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_d1ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void e1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_e1ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_b2ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_b3ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_b4ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_b5ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_c2ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_c3ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_c4ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_c5ActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void d2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_d2ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void e2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_e2ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void d3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_d3ActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+    private void d4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    }//GEN-LAST:event_d4ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+    private void d5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    }//GEN-LAST:event_d5ActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+    private void e3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    }//GEN-LAST:event_e3ActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+    private void e4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+    }//GEN-LAST:event_e4ActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    private void e5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
-
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    }//GEN-LAST:event_e5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -514,32 +500,31 @@ public class juego extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton a1;
+    private javax.swing.JButton a2;
+    private javax.swing.JButton a3;
+    private javax.swing.JButton a4;
+    private javax.swing.JButton a5;
+    private javax.swing.JButton b1;
+    private javax.swing.JButton b2;
+    private javax.swing.JButton b3;
+    private javax.swing.JButton b4;
+    private javax.swing.JButton b5;
+    private javax.swing.JButton c1;
+    private javax.swing.JButton c2;
+    private javax.swing.JButton c3;
+    private javax.swing.JButton c4;
+    private javax.swing.JButton c5;
+    private javax.swing.JButton d1;
+    private javax.swing.JButton d2;
+    private javax.swing.JButton d3;
+    private javax.swing.JButton d4;
+    private javax.swing.JButton d5;
+    private javax.swing.JButton e1;
+    private javax.swing.JButton e2;
+    private javax.swing.JButton e3;
+    private javax.swing.JButton e4;
+    private javax.swing.JButton e5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

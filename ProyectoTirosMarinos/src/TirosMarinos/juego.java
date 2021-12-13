@@ -16,9 +16,33 @@ public class juego extends javax.swing.JFrame {
      */
     public juego() {
         initComponents();
+        int barcos[][]=new int[5][5];
+        EscondeSubmarinos(barcos);
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print(barcos[i][j]+" ");
+            }
+            System.out.println("");
+        }
         this.setExtendedState(MAXIMIZED_BOTH);
+        
     }
-
+    static int[][] EscondeSubmarinos(int matriz[][]) {
+        int contador = 0;
+        int y = 0, x = 0;
+        do {
+            y = (int) (Math.random() * matriz.length - 1);
+            x = (int) (Math.random() * matriz[y].length - 1);
+            if (matriz[y][x] == 1) {
+                contador = contador - 1;
+            }
+            matriz[y][x] = 1;
+            contador = contador + 1;
+        } while (contador < 5);
+        return matriz;
+    }
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

@@ -495,9 +495,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btntiros" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnbarcodestruido" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="barcosrestantes" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tirosrestantes" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="barcosdestruidos" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="39" max="32767" attributes="0"/>
                   </Group>
@@ -507,28 +507,28 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnbarcodestruido" min="-2" max="-2" attributes="0"/>
+                      <Component id="barcosdestruidos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="barcosrestantes" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btntiros" min="-2" max="-2" attributes="0"/>
+                      <Component id="tirosrestantes" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="btnbarcodestruido">
+            <Component class="javax.swing.JLabel" name="barcosdestruidos">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Barcos destruidos:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
+            <Component class="javax.swing.JLabel" name="barcosrestantes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Barcos restantes:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="btntiros">
+            <Component class="javax.swing.JLabel" name="tirosrestantes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tiros restantes:"/>
               </Properties>

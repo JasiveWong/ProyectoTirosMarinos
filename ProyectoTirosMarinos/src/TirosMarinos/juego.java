@@ -19,7 +19,9 @@ public class juego extends javax.swing.JFrame {
     boolean colores = false, game = false;
     int y = 0, x = 0;
     int barcos[][] = new int[5][5];
-    
+    int bd=0;
+    int br=5;
+    int tr=10;
     public juego() {
         initComponents();
 
@@ -62,15 +64,21 @@ public class juego extends javax.swing.JFrame {
     }
 
     int[][] Balazomarino(int matriz[][], int y, int x) {
-
+        tr--;
         if (matriz[y][x] == 1) {
-
             matriz[y][x] = 2;
             estado.setText("               Acertaste");
+            br--;
+            bd++;
+            
         } else {
             estado.setText("               Fallaste");
             matriz[y][x] = 3;
         }
+        
+        barcosdestruidos.setText("Barcos destruidos: "+ bd);
+        barcosrestantes.setText("Barcos restantes: "+ br);
+        tirosrestantes.setText("Tiros restantes: "+tr);
         return matriz;
     }
 
@@ -136,7 +144,6 @@ public class juego extends javax.swing.JFrame {
             }
         }
         
-
     }
     void desactivarbotones(){
         a1.setEnabled(false);
@@ -216,9 +223,9 @@ public class juego extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        btnbarcodestruido = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        btntiros = new javax.swing.JLabel();
+        barcosdestruidos = new javax.swing.JLabel();
+        barcosrestantes = new javax.swing.JLabel();
+        tirosrestantes = new javax.swing.JLabel();
         estado = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -460,11 +467,11 @@ public class juego extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resumen"));
         jPanel2.setFont(new java.awt.Font("Trebuchet MS", 3, 48)); // NOI18N
 
-        btnbarcodestruido.setText("Barcos destruidos:");
+        barcosdestruidos.setText("Barcos destruidos:");
 
-        jLabel5.setText("Barcos restantes:");
+        barcosrestantes.setText("Barcos restantes:");
 
-        btntiros.setText("Tiros restantes:");
+        tirosrestantes.setText("Tiros restantes:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -472,20 +479,20 @@ public class juego extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(btntiros)
-                    .addComponent(btnbarcodestruido))
+                    .addComponent(barcosrestantes)
+                    .addComponent(tirosrestantes)
+                    .addComponent(barcosdestruidos))
                 .addGap(0, 39, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnbarcodestruido)
+                .addComponent(barcosdestruidos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(barcosrestantes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btntiros)
+                .addComponent(tirosrestantes)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -662,8 +669,8 @@ public class juego extends javax.swing.JFrame {
     private javax.swing.JButton b3;
     private javax.swing.JButton b4;
     private javax.swing.JButton b5;
-    private javax.swing.JLabel btnbarcodestruido;
-    private javax.swing.JLabel btntiros;
+    private javax.swing.JLabel barcosdestruidos;
+    private javax.swing.JLabel barcosrestantes;
     private javax.swing.JButton c1;
     private javax.swing.JButton c2;
     private javax.swing.JButton c3;
@@ -689,12 +696,12 @@ public class juego extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel tirosrestantes;
     // End of variables declaration//GEN-END:variables
 }

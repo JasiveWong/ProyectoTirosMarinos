@@ -5,28 +5,36 @@
  */
 package TirosMarinos;
 
+import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gabriel
  */
 public class juego extends javax.swing.JFrame {
 
-    /**
-     * Creates new form juego
-     */
+    int puntos = 0, intento = 0;
+    boolean colores = false, game = false;
+    int y = 0, x = 0;
+    int barcos[][] = new int[5][5];
+  
+
     public juego() {
-        initComponents();
-        int barcos[][]=new int[5][5];
+        initComponents();        
+        
         EscondeSubmarinos(barcos);
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.print(barcos[i][j]+" ");
+                System.out.print(barcos[i][j] + " ");
             }
             System.out.println("");
         }
         this.setExtendedState(MAXIMIZED_BOTH);
-        
+
     }
+
     static int[][] EscondeSubmarinos(int matriz[][]) {
         int contador = 0;
         int y = 0, x = 0;
@@ -41,8 +49,101 @@ public class juego extends javax.swing.JFrame {
         } while (contador < 5);
         return matriz;
     }
+
+    static boolean Color(int matriz[][], int y, int x) {
+        boolean color = false;
+
+        if (matriz[y][x] == 1) {
+
+            color = true;
+        } else {
+            color = false;
+        }
+        return color;
+    }
+
+    static int[][] Balazomarino(int matriz[][], int y, int x) {
+
+        if (matriz[y][x] == 1) {
+
+            matriz[y][x] = 2;
+            JOptionPane.showMessageDialog(null, "Acertaste");
+        } else {
+            JOptionPane.showMessageDialog(null, "Fallaste");
+            matriz[y][x] = 3;
+        }
+        return matriz;
+    }
+
+    static boolean validar(int matriz[][]) {
+        int y = 0;
+        boolean game = true;
+        do {
+            for (int i = 0; i < matriz[y].length; i++) {
+
+                if (matriz[y][i] == 1) {
+                    game = false;
+
+                }
+
+            }
+
+            y++;
+
+        } while (game != false && y < matriz.length);
+
+        return game;
+    }
+
+  
+     static int puntaje(int matriz[][], int puntos){    
+        int y=0,cont=0;                
+               for(int i2=0; i2<matriz.length; i2++){ 
+                   
+             for(int i=0;i<matriz[i2].length; i++ ){
+            
+                if(matriz[i2][i]== 2){
+                    cont=cont+1;                               
+                }             
+                }             
+                      
+        }
+         puntos= cont * 100;            
+        return puntos;
+    } 
     
     
+    
+    
+    
+    
+    void AccionBoton(int y, int x, JButton boton) {
+        colores = Color(barcos, y, x);
+        barcos = Balazomarino(barcos, y, x);
+        game = validar(barcos);
+
+        if (colores == true) {
+               boton.setBackground(Color.red);
+        
+        } else {
+            boton.setBackground(Color.BLACK);
+        }
+
+        boton.setEnabled(false);
+       
+        
+        if (game == true) {
+            JOptionPane.showMessageDialog(null, "Ganaste, destruiste todos los barcos");
+            
+        } else {
+            if (intento >= 5) {
+                JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
+                
+            }
+        }
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -91,9 +192,9 @@ public class juego extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        btnbarcodestruido = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        btntiros = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -335,11 +436,11 @@ public class juego extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resumen"));
         jPanel2.setFont(new java.awt.Font("Trebuchet MS", 3, 48)); // NOI18N
 
-        jLabel4.setText("Barcos destruidos:");
+        btnbarcodestruido.setText("Barcos destruidos:");
 
         jLabel5.setText("Barcos restantes:");
 
-        jLabel16.setText("Tiros restantes:");
+        btntiros.setText("Tiros restantes:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -348,20 +449,20 @@ public class juego extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel16)
-                    .addComponent(jLabel4))
+                    .addComponent(btntiros)
+                    .addComponent(btnbarcodestruido))
                 .addGap(0, 39, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4)
+                .addComponent(btnbarcodestruido)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(btntiros)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 380, 140, 110));
@@ -389,103 +490,106 @@ public class juego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a2ActionPerformed
-        // TODO add your handling code here:
+        AccionBoton(0, 1,a2);
+        
     }//GEN-LAST:event_a2ActionPerformed
 
     private void a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a3ActionPerformed
-        // TODO add your handling code here:
+    AccionBoton(0,2,a3);    // TODO add your handling code here:
     }//GEN-LAST:event_a3ActionPerformed
 
     private void a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a1ActionPerformed
-        // TODO add your handling code here:
+        AccionBoton(0,0,a1);
+      
+       // TODO add your handling code here:
     }//GEN-LAST:event_a1ActionPerformed
 
     private void a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a4ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(0,3,a4);        // TODO add your handling code here:
     }//GEN-LAST:event_a4ActionPerformed
 
     private void a5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a5ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(0,4,a5);        // TODO add your handling code here:
     }//GEN-LAST:event_a5ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(1,0,b1);        // TODO add your handling code here:
     }//GEN-LAST:event_b1ActionPerformed
 
     private void c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c1ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(2,0,c1);        // TODO add your handling code here:
     }//GEN-LAST:event_c1ActionPerformed
 
     private void d1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d1ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(3,0,d1);         // TODO add your handling code here:
     }//GEN-LAST:event_d1ActionPerformed
 
     private void e1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e1ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(4,0,e1);         // TODO add your handling code here:
     }//GEN-LAST:event_e1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(1,1,b2);        // TODO add your handling code here:
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(1,2,b3);        // TODO add your handling code here:
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(1,3,b4);        // TODO add your handling code here:
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(1,4,b5);        // TODO add your handling code here:
     }//GEN-LAST:event_b5ActionPerformed
 
     private void c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c2ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(2,1,c2);         // TODO add your handling code here:
     }//GEN-LAST:event_c2ActionPerformed
 
     private void c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c3ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(2,2,c3);         // TODO add your handling code here:
     }//GEN-LAST:event_c3ActionPerformed
 
     private void c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c4ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(2,3,c4);         // TODO add your handling code here:
     }//GEN-LAST:event_c4ActionPerformed
 
     private void c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c5ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(2,4,c5);         // TODO add your handling code here:
     }//GEN-LAST:event_c5ActionPerformed
 
     private void d2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d2ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(3,1,d2);         // TODO add your handling code here:
     }//GEN-LAST:event_d2ActionPerformed
 
     private void e2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e2ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(4,1,e2);          // TODO add your handling code here:
     }//GEN-LAST:event_e2ActionPerformed
 
     private void d3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d3ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(3,2,d3);         // TODO add your handling code here:
     }//GEN-LAST:event_d3ActionPerformed
 
     private void d4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d4ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(3,3,d4);         // TODO add your handling code here:
     }//GEN-LAST:event_d4ActionPerformed
 
     private void d5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d5ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(3,4,d5);         // TODO add your handling code here:
     }//GEN-LAST:event_d5ActionPerformed
 
     private void e3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e3ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(4,2,e3);          // TODO add your handling code here:
     }//GEN-LAST:event_e3ActionPerformed
 
     private void e4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e4ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(4,3,e4);          // TODO add your handling code here:
     }//GEN-LAST:event_e4ActionPerformed
 
     private void e5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e5ActionPerformed
-        // TODO add your handling code here:
+AccionBoton(4,4,e5);          // TODO add your handling code here:
     }//GEN-LAST:event_e5ActionPerformed
 
     /**
@@ -534,6 +638,8 @@ public class juego extends javax.swing.JFrame {
     private javax.swing.JButton b3;
     private javax.swing.JButton b4;
     private javax.swing.JButton b5;
+    private javax.swing.JLabel btnbarcodestruido;
+    private javax.swing.JLabel btntiros;
     private javax.swing.JButton c1;
     private javax.swing.JButton c2;
     private javax.swing.JButton c3;
@@ -556,11 +662,9 @@ public class juego extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

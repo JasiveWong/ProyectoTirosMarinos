@@ -32,7 +32,7 @@ public class juego extends javax.swing.JFrame {
             }
             System.out.println("");
         }
-        this.setExtendedState(MAXIMIZED_BOTH);
+        //this.setExtendedState(MAXIMIZED_BOTH);
 
     }
 
@@ -227,6 +227,8 @@ public class juego extends javax.swing.JFrame {
         barcosrestantes = new javax.swing.JLabel();
         tirosrestantes = new javax.swing.JLabel();
         estado = new javax.swing.JLabel();
+        btnsalir = new javax.swing.JButton();
+        btnreiniciar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -503,6 +505,22 @@ public class juego extends javax.swing.JFrame {
         estado.setText("Barco hundido o Tiro fallado");
         jPanel3.add(estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 710, -1, -1));
 
+        btnsalir.setText("Salir");
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalirActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, 140, -1));
+
+        btnreiniciar.setText("Reiniciar");
+        btnreiniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnreiniciarActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnreiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 500, 140, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ship-World-of-Warships-video-games-vehicle-artwork-iceberg-575205-wallhere.com.jpg"))); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 840));
 
@@ -623,6 +641,18 @@ public class juego extends javax.swing.JFrame {
         AccionBoton(4, 4, e5);          // TODO add your handling code here:
     }//GEN-LAST:event_e5ActionPerformed
 
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+System.exit(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void btnreiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnreiniciarActionPerformed
+ juego me = new juego();
+        me.dispose();
+        me.setVisible(true);
+        me.setLocationRelativeTo(null);
+        this.dispose();          // TODO add your handling code here:
+    }//GEN-LAST:event_btnreiniciarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -671,6 +701,8 @@ public class juego extends javax.swing.JFrame {
     private javax.swing.JButton b5;
     private javax.swing.JLabel barcosdestruidos;
     private javax.swing.JLabel barcosrestantes;
+    private javax.swing.JButton btnreiniciar;
+    private javax.swing.JButton btnsalir;
     private javax.swing.JButton c1;
     private javax.swing.JButton c2;
     private javax.swing.JButton c3;

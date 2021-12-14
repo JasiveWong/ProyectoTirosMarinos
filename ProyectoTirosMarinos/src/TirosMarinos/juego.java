@@ -19,11 +19,10 @@ public class juego extends javax.swing.JFrame {
     boolean colores = false, game = false;
     int y = 0, x = 0;
     int barcos[][] = new int[5][5];
-  
-
+    
     public juego() {
-        initComponents();        
-        
+        initComponents();
+
         EscondeSubmarinos(barcos);
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -62,14 +61,14 @@ public class juego extends javax.swing.JFrame {
         return color;
     }
 
-    static int[][] Balazomarino(int matriz[][], int y, int x) {
+    int[][] Balazomarino(int matriz[][], int y, int x) {
 
         if (matriz[y][x] == 1) {
 
             matriz[y][x] = 2;
-            JOptionPane.showMessageDialog(null, "Acertaste");
+            estado.setText("               Acertaste");
         } else {
-            JOptionPane.showMessageDialog(null, "Fallaste");
+            estado.setText("               Fallaste");
             matriz[y][x] = 3;
         }
         return matriz;
@@ -95,53 +94,78 @@ public class juego extends javax.swing.JFrame {
         return game;
     }
 
-  
-     static int puntaje(int matriz[][], int puntos){    
-        int y=0,cont=0;                
-               for(int i2=0; i2<matriz.length; i2++){ 
-                   
-             for(int i=0;i<matriz[i2].length; i++ ){
-            
-                if(matriz[i2][i]== 2){
-                    cont=cont+1;                               
-                }             
-                }             
-                      
+    static int puntaje(int matriz[][], int puntos) {
+        int y = 0, cont = 0;
+        for (int i2 = 0; i2 < matriz.length; i2++) {
+
+            for (int i = 0; i < matriz[i2].length; i++) {
+
+                if (matriz[i2][i] == 2) {
+                    cont = cont + 1;
+                }
+            }
+
         }
-         puntos= cont * 100;            
+        puntos = cont * 100;
         return puntos;
-    } 
-    
-    
-    
-    
-    
-    
+    }
+
     void AccionBoton(int y, int x, JButton boton) {
         colores = Color(barcos, y, x);
         barcos = Balazomarino(barcos, y, x);
         game = validar(barcos);
-
+        intento++;
         if (colores == true) {
-               boton.setBackground(Color.red);
-        
+            boton.setBackground(Color.red);
+
         } else {
             boton.setBackground(Color.BLACK);
         }
-
         boton.setEnabled(false);
-       
-        
+
         if (game == true) {
-            JOptionPane.showMessageDialog(null, "Ganaste, destruiste todos los barcos");
-            
+            estado.setText("Ganaste, destruiste todos los barcos");
+            //JOptionPane.showMessageDialog(null, "Ganaste, destruiste todos los barcos");
+            desactivarbotones();
+
         } else {
-            if (intento >= 5) {
-                JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
-                
+            if (intento >= 10) {
+                estado.setText("Perdiste, aún hay barcos enemigos activos");
+                //JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
+                desactivarbotones();
             }
         }
+        
 
+    }
+    void desactivarbotones(){
+        a1.setEnabled(false);
+        a2.setEnabled(false);
+        a3.setEnabled(false);
+        a4.setEnabled(false);
+        a5.setEnabled(false);
+        b1.setEnabled(false);
+        b2.setEnabled(false);
+        b3.setEnabled(false);
+        b4.setEnabled(false);
+        b5.setEnabled(false);
+        c1.setEnabled(false);
+        c2.setEnabled(false);
+        c3.setEnabled(false);
+        c4.setEnabled(false);
+        c5.setEnabled(false);
+        d1.setEnabled(false);
+        d2.setEnabled(false);
+        d3.setEnabled(false);
+        d4.setEnabled(false);
+        d5.setEnabled(false);
+        e1.setEnabled(false);
+        e2.setEnabled(false);
+        e3.setEnabled(false);
+        e4.setEnabled(false);
+        e5.setEnabled(false);
+        
+        
     }
 
     /**
@@ -195,7 +219,7 @@ public class juego extends javax.swing.JFrame {
         btnbarcodestruido = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btntiros = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        estado = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -467,10 +491,10 @@ public class juego extends javax.swing.JFrame {
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 380, 140, 110));
 
-        jLabel17.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Barco hundido o Tiro fallado");
-        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 710, -1, -1));
+        estado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
+        estado.setForeground(new java.awt.Color(255, 255, 255));
+        estado.setText("Barco hundido o Tiro fallado");
+        jPanel3.add(estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 710, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ship-World-of-Warships-video-games-vehicle-artwork-iceberg-575205-wallhere.com.jpg"))); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 840));
@@ -490,106 +514,106 @@ public class juego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a2ActionPerformed
-        AccionBoton(0, 1,a2);
-        
+        AccionBoton(0, 1, a2);
+
     }//GEN-LAST:event_a2ActionPerformed
 
     private void a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a3ActionPerformed
-    AccionBoton(0,2,a3);    // TODO add your handling code here:
+        AccionBoton(0, 2, a3);    // TODO add your handling code here:
     }//GEN-LAST:event_a3ActionPerformed
 
     private void a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a1ActionPerformed
-        AccionBoton(0,0,a1);
-      
-       // TODO add your handling code here:
+        AccionBoton(0, 0, a1);
+
+        // TODO add your handling code here:
     }//GEN-LAST:event_a1ActionPerformed
 
     private void a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a4ActionPerformed
-AccionBoton(0,3,a4);        // TODO add your handling code here:
+        AccionBoton(0, 3, a4);        // TODO add your handling code here:
     }//GEN-LAST:event_a4ActionPerformed
 
     private void a5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a5ActionPerformed
-AccionBoton(0,4,a5);        // TODO add your handling code here:
+        AccionBoton(0, 4, a5);        // TODO add your handling code here:
     }//GEN-LAST:event_a5ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-AccionBoton(1,0,b1);        // TODO add your handling code here:
+        AccionBoton(1, 0, b1);        // TODO add your handling code here:
     }//GEN-LAST:event_b1ActionPerformed
 
     private void c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c1ActionPerformed
-AccionBoton(2,0,c1);        // TODO add your handling code here:
+        AccionBoton(2, 0, c1);        // TODO add your handling code here:
     }//GEN-LAST:event_c1ActionPerformed
 
     private void d1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d1ActionPerformed
-AccionBoton(3,0,d1);         // TODO add your handling code here:
+        AccionBoton(3, 0, d1);         // TODO add your handling code here:
     }//GEN-LAST:event_d1ActionPerformed
 
     private void e1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e1ActionPerformed
-AccionBoton(4,0,e1);         // TODO add your handling code here:
+        AccionBoton(4, 0, e1);         // TODO add your handling code here:
     }//GEN-LAST:event_e1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-AccionBoton(1,1,b2);        // TODO add your handling code here:
+        AccionBoton(1, 1, b2);        // TODO add your handling code here:
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-AccionBoton(1,2,b3);        // TODO add your handling code here:
+        AccionBoton(1, 2, b3);        // TODO add your handling code here:
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
-AccionBoton(1,3,b4);        // TODO add your handling code here:
+        AccionBoton(1, 3, b4);        // TODO add your handling code here:
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
-AccionBoton(1,4,b5);        // TODO add your handling code here:
+        AccionBoton(1, 4, b5);        // TODO add your handling code here:
     }//GEN-LAST:event_b5ActionPerformed
 
     private void c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c2ActionPerformed
-AccionBoton(2,1,c2);         // TODO add your handling code here:
+        AccionBoton(2, 1, c2);         // TODO add your handling code here:
     }//GEN-LAST:event_c2ActionPerformed
 
     private void c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c3ActionPerformed
-AccionBoton(2,2,c3);         // TODO add your handling code here:
+        AccionBoton(2, 2, c3);         // TODO add your handling code here:
     }//GEN-LAST:event_c3ActionPerformed
 
     private void c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c4ActionPerformed
-AccionBoton(2,3,c4);         // TODO add your handling code here:
+        AccionBoton(2, 3, c4);         // TODO add your handling code here:
     }//GEN-LAST:event_c4ActionPerformed
 
     private void c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c5ActionPerformed
-AccionBoton(2,4,c5);         // TODO add your handling code here:
+        AccionBoton(2, 4, c5);         // TODO add your handling code here:
     }//GEN-LAST:event_c5ActionPerformed
 
     private void d2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d2ActionPerformed
-AccionBoton(3,1,d2);         // TODO add your handling code here:
+        AccionBoton(3, 1, d2);         // TODO add your handling code here:
     }//GEN-LAST:event_d2ActionPerformed
 
     private void e2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e2ActionPerformed
-AccionBoton(4,1,e2);          // TODO add your handling code here:
+        AccionBoton(4, 1, e2);          // TODO add your handling code here:
     }//GEN-LAST:event_e2ActionPerformed
 
     private void d3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d3ActionPerformed
-AccionBoton(3,2,d3);         // TODO add your handling code here:
+        AccionBoton(3, 2, d3);         // TODO add your handling code here:
     }//GEN-LAST:event_d3ActionPerformed
 
     private void d4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d4ActionPerformed
-AccionBoton(3,3,d4);         // TODO add your handling code here:
+        AccionBoton(3, 3, d4);         // TODO add your handling code here:
     }//GEN-LAST:event_d4ActionPerformed
 
     private void d5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d5ActionPerformed
-AccionBoton(3,4,d5);         // TODO add your handling code here:
+        AccionBoton(3, 4, d5);         // TODO add your handling code here:
     }//GEN-LAST:event_d5ActionPerformed
 
     private void e3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e3ActionPerformed
-AccionBoton(4,2,e3);          // TODO add your handling code here:
+        AccionBoton(4, 2, e3);          // TODO add your handling code here:
     }//GEN-LAST:event_e3ActionPerformed
 
     private void e4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e4ActionPerformed
-AccionBoton(4,3,e4);          // TODO add your handling code here:
+        AccionBoton(4, 3, e4);          // TODO add your handling code here:
     }//GEN-LAST:event_e4ActionPerformed
 
     private void e5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e5ActionPerformed
-AccionBoton(4,4,e5);          // TODO add your handling code here:
+        AccionBoton(4, 4, e5);          // TODO add your handling code here:
     }//GEN-LAST:event_e5ActionPerformed
 
     /**
@@ -655,6 +679,7 @@ AccionBoton(4,4,e5);          // TODO add your handling code here:
     private javax.swing.JButton e3;
     private javax.swing.JButton e4;
     private javax.swing.JButton e5;
+    private javax.swing.JLabel estado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -662,7 +687,6 @@ AccionBoton(4,4,e5);          // TODO add your handling code here:
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel5;

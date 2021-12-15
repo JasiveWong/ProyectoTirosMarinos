@@ -232,6 +232,7 @@ public class juego extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -240,231 +241,231 @@ public class juego extends javax.swing.JFrame {
                 a2ActionPerformed(evt);
             }
         });
-        jPanel3.add(a2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, 80, 60));
+        jPanel3.add(a2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 80, 60));
 
         a3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 a3ActionPerformed(evt);
             }
         });
-        jPanel3.add(a3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 80, 60));
+        jPanel3.add(a3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 80, 60));
 
         a1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 a1ActionPerformed(evt);
             }
         });
-        jPanel3.add(a1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, 80, 60));
+        jPanel3.add(a1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 80, 60));
 
         a4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 a4ActionPerformed(evt);
             }
         });
-        jPanel3.add(a4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, 80, 60));
+        jPanel3.add(a4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, 80, 60));
 
         a5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 a5ActionPerformed(evt);
             }
         });
-        jPanel3.add(a5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 380, 80, 60));
+        jPanel3.add(a5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 80, 60));
 
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b1ActionPerformed(evt);
             }
         });
-        jPanel3.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 80, 60));
+        jPanel3.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 80, 60));
 
         c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c1ActionPerformed(evt);
             }
         });
-        jPanel3.add(c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 80, 60));
+        jPanel3.add(c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 80, 60));
 
         d1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d1ActionPerformed(evt);
             }
         });
-        jPanel3.add(d1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 560, 80, 60));
+        jPanel3.add(d1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, 80, 60));
 
         e1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e1ActionPerformed(evt);
             }
         });
-        jPanel3.add(e1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 620, 80, 60));
+        jPanel3.add(e1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 510, 80, 60));
 
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b2ActionPerformed(evt);
             }
         });
-        jPanel3.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 80, 60));
+        jPanel3.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 80, 60));
 
         b3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b3ActionPerformed(evt);
             }
         });
-        jPanel3.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 440, 80, 60));
+        jPanel3.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, 80, 60));
 
         b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b4ActionPerformed(evt);
             }
         });
-        jPanel3.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 440, 80, 60));
+        jPanel3.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 80, 60));
 
         b5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b5ActionPerformed(evt);
             }
         });
-        jPanel3.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 440, 80, 60));
+        jPanel3.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, 80, 60));
 
         c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c2ActionPerformed(evt);
             }
         });
-        jPanel3.add(c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 80, 60));
+        jPanel3.add(c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 80, 60));
 
         c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c3ActionPerformed(evt);
             }
         });
-        jPanel3.add(c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 80, 60));
+        jPanel3.add(c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 80, 60));
 
         c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c4ActionPerformed(evt);
             }
         });
-        jPanel3.add(c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 500, 80, 60));
+        jPanel3.add(c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 80, 60));
 
         c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c5ActionPerformed(evt);
             }
         });
-        jPanel3.add(c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, 80, 60));
+        jPanel3.add(c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, 80, 60));
 
         d2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d2ActionPerformed(evt);
             }
         });
-        jPanel3.add(d2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 560, 80, 60));
+        jPanel3.add(d2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, 80, 60));
 
         e2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e2ActionPerformed(evt);
             }
         });
-        jPanel3.add(e2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 620, 80, 60));
+        jPanel3.add(e2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 510, 80, 60));
 
         d3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d3ActionPerformed(evt);
             }
         });
-        jPanel3.add(d3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 80, 60));
+        jPanel3.add(d3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 80, 60));
 
         d4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d4ActionPerformed(evt);
             }
         });
-        jPanel3.add(d4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 560, 80, 60));
+        jPanel3.add(d4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, 80, 60));
 
         d5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d5ActionPerformed(evt);
             }
         });
-        jPanel3.add(d5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 560, 80, 60));
+        jPanel3.add(d5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, 80, 60));
 
         e3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e3ActionPerformed(evt);
             }
         });
-        jPanel3.add(e3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 80, 60));
+        jPanel3.add(e3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 510, 80, 60));
 
         e4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e4ActionPerformed(evt);
             }
         });
-        jPanel3.add(e4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 620, 80, 60));
+        jPanel3.add(e4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 510, 80, 60));
 
         e5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e5ActionPerformed(evt);
             }
         });
-        jPanel3.add(e5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 620, 80, 60));
+        jPanel3.add(e5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 510, 80, 60));
 
         jLabel12.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("A");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 50, 50));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 50, 50));
 
         jLabel13.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("B");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 50, 50));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, 50, 50));
 
         jLabel14.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("C");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 500, 50, 50));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 50, 50));
 
         jLabel15.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("D");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 560, 50, 50));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, 50, 50));
 
         jLabel7.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("E");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 620, 50, 50));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, 50, 50));
 
         jLabel6.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("1");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, 60, 50));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 60, 50));
 
         jLabel8.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("2");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, 60, 50));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 60, 50));
 
         jLabel10.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("3");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 60, 50));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 210, 60, 50));
 
         jLabel11.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("4");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 320, 60, 50));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 60, 50));
 
         jLabel9.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("5");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 320, 60, 50));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, 60, 50));
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/jugador.png"))); // NOI18N
-        jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 240, 110, 70));
+        jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 70));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/TITULO.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resumen"));
         jPanel2.setFont(new java.awt.Font("Trebuchet MS", 3, 48)); // NOI18N
@@ -495,15 +496,15 @@ public class juego extends javax.swing.JFrame {
                 .addComponent(barcosrestantes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tirosrestantes)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 380, 140, 110));
+        jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, 140, 110));
 
         estado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
         estado.setForeground(new java.awt.Color(255, 255, 255));
         estado.setText("Barco hundido o Tiro fallado");
-        jPanel3.add(estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 710, -1, -1));
+        jPanel3.add(estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, -1, -1));
 
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
@@ -511,7 +512,7 @@ public class juego extends javax.swing.JFrame {
                 btnsalirActionPerformed(evt);
             }
         });
-        jPanel3.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, 140, -1));
+        jPanel3.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 140, -1));
 
         btnreiniciar.setText("Reiniciar");
         btnreiniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -519,16 +520,18 @@ public class juego extends javax.swing.JFrame {
                 btnreiniciarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnreiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 500, 140, -1));
+        jPanel3.add(btnreiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 400, 140, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ship-World-of-Warships-video-games-vehicle-artwork-iceberg-575205-wallhere.com.jpg"))); // NOI18N
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 840));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 660));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

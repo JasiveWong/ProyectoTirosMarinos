@@ -22,6 +22,10 @@ public class juego extends javax.swing.JFrame {
     int bd=0;
     int br=5;
     int tr=10;
+    
+    
+    
+    
     public juego() {
         initComponents();
 
@@ -118,6 +122,9 @@ public class juego extends javax.swing.JFrame {
         return puntos;
     }
 
+   
+    
+    
     void AccionBoton(int y, int x, JButton boton) {
         colores = Color(barcos, y, x);
         barcos = Balazomarino(barcos, y, x);
@@ -141,12 +148,100 @@ public class juego extends javax.swing.JFrame {
             if ((intento >= 10)||(tr<br)) {
                 estado.setText("               Perdiste");
                 btnreiniciar.setEnabled(true);
-                //JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
-                desactivarbotones();
+                   desactivarbotones();
+                   finfin(barcos);
             }
         }
         
     }
+    
+     void finfin(int boton[][]) {
+        System.out.println("hola");
+        if (boton[0][0] == 1) {
+            finfinalcolor(a1);
+        }
+        if (boton[0][1] == 1) {
+            finfinalcolor(a2);
+        }
+        if (boton[0][2] == 1) {
+            finfinalcolor(a3);
+        }
+        if (boton[0][3] == 1) {
+            finfinalcolor(a4);
+        }
+        if (boton[0][4] == 1) {
+            finfinalcolor(a5);
+        }
+        if (boton[1][0] == 1) {
+            finfinalcolor(b1);
+        }
+        if (boton[1][1] == 1) {
+            finfinalcolor(b2);
+        }
+        if (boton[1][2] == 1) {
+            finfinalcolor(b3);
+        }
+        if (boton[1][3] == 1) {
+            finfinalcolor(b4);
+        }
+        if (boton[1][4] == 1) {
+            finfinalcolor(b5);
+        }
+        if (boton[2][0] == 1) {
+            finfinalcolor(c1);
+        }
+        if (boton[2][1] == 1) {
+            finfinalcolor(c2);
+        }
+        if (boton[2][2] == 1) {
+            finfinalcolor(c3);
+        }
+        if (boton[2][3] == 1) {
+            finfinalcolor(c4);
+        }
+        if (boton[2][4] == 1) {
+            finfinalcolor(c5);
+        }
+        if (boton[3][0] == 1) {
+            finfinalcolor(d1);
+        }
+        if (boton[3][1] == 1) {
+            finfinalcolor(d2);
+        }
+        if (boton[3][2] == 1) {
+            finfinalcolor(d3);
+        }
+        if (boton[3][3] == 1) {
+            finfinalcolor(d4);
+        }
+        if (boton[3][4] == 1) {
+            finfinalcolor(d5);
+        }
+        if (boton[4][0] == 1) {
+            finfinalcolor(e1);
+        }
+        if (boton[4][1] == 1) {
+            finfinalcolor(e2);
+        }
+        if (boton[4][2] == 1) {
+            finfinalcolor(e3);
+        }
+        if (boton[4][3] == 1) {
+            finfinalcolor(e4);
+        }
+        if (boton[4][4] == 1) {
+            finfinalcolor(e5);
+        }
+    }
+
+    void finfinalcolor(JButton btn) {
+        btn.setBackground(Color.red);
+    }
+    
+   
+     
+    
+    
     void desactivarbotones(){
         a1.setEnabled(false);
         a2.setEnabled(false);
@@ -546,7 +641,6 @@ public class juego extends javax.swing.JFrame {
 
     private void a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a2ActionPerformed
         AccionBoton(0, 1, a2);
-
     }//GEN-LAST:event_a2ActionPerformed
 
     private void a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a3ActionPerformed

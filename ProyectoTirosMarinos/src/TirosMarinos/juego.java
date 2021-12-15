@@ -67,12 +67,12 @@ public class juego extends javax.swing.JFrame {
         tr--;
         if (matriz[y][x] == 1) {
             matriz[y][x] = 2;
-            estado.setText("               Acertaste");
+            estado.setText("          Barco derribado");
             br--;
             bd++;
             
         } else {
-            estado.setText("               Fallaste");
+            estado.setText("        El tiro cayó al agua");
             matriz[y][x] = 3;
         }
         
@@ -127,18 +127,20 @@ public class juego extends javax.swing.JFrame {
             boton.setBackground(Color.red);
 
         } else {
-            boton.setBackground(Color.BLACK);
+            boton.setBackground(Color.gray);
         }
         boton.setEnabled(false);
 
         if (game == true) {
-            estado.setText("Ganaste, destruiste todos los barcos");
+            estado.setText("               Ganaste");
+            btnreiniciar.setEnabled(true);
             //JOptionPane.showMessageDialog(null, "Ganaste, destruiste todos los barcos");
             desactivarbotones();
 
         } else {
             if (intento >= 10) {
-                estado.setText("Perdiste, aún hay barcos enemigos activos");
+                estado.setText("               Perdiste");
+                btnreiniciar.setEnabled(true);
                 //JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
                 desactivarbotones();
             }
@@ -496,7 +498,7 @@ public class juego extends javax.swing.JFrame {
                 .addComponent(barcosrestantes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tirosrestantes)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, 140, 110));
@@ -515,6 +517,7 @@ public class juego extends javax.swing.JFrame {
         jPanel3.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 140, -1));
 
         btnreiniciar.setText("Reiniciar");
+        btnreiniciar.setEnabled(false);
         btnreiniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnreiniciarActionPerformed(evt);

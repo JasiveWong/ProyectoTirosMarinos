@@ -138,7 +138,7 @@ public class juego extends javax.swing.JFrame {
             desactivarbotones();
 
         } else {
-            if (intento >= 10) {
+            if ((intento >= 10)||(tr<br)) {
                 estado.setText("               Perdiste");
                 btnreiniciar.setEnabled(true);
                 //JOptionPane.showMessageDialog(null, "Perdiste, aún hay barcos enemigos activos");
@@ -472,11 +472,11 @@ public class juego extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resumen"));
         jPanel2.setFont(new java.awt.Font("Trebuchet MS", 3, 48)); // NOI18N
 
-        barcosdestruidos.setText("Barcos destruidos:");
+        barcosdestruidos.setText("Barcos destruidos: 0");
 
-        barcosrestantes.setText("Barcos restantes:");
+        barcosrestantes.setText("Barcos restantes: 5");
 
-        tirosrestantes.setText("Tiros restantes:");
+        tirosrestantes.setText("Tiros restantes: 10");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -487,7 +487,7 @@ public class juego extends javax.swing.JFrame {
                     .addComponent(barcosrestantes)
                     .addComponent(tirosrestantes)
                     .addComponent(barcosdestruidos))
-                .addGap(0, 39, Short.MAX_VALUE))
+                .addGap(0, 30, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

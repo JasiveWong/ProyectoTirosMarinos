@@ -44,8 +44,8 @@ public class juego extends javax.swing.JFrame {
         int contador = 0;
         int y = 0, x = 0;
         do {
-            y = (int) (Math.random() * matriz.length - 1);
-            x = (int) (Math.random() * matriz[y].length - 1);
+            y = (int) (Math.random() * matriz.length );
+            x = (int) (Math.random() * matriz[y].length );
             if (matriz[y][x] == 1) {
                 contador = contador - 1;
             }
